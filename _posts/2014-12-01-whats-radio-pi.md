@@ -7,6 +7,7 @@ My project for this december was to build a radio with a Raspberry Pi. One of my
 that even my parents can use it. 
 
 Used Hardware
+
 - [Raspberry Pi B+]( http://www.raspberrypi.org/products/model-b-plus/ )
   - micro SD card
   - Lan cable
