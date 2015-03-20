@@ -8,7 +8,7 @@ With this step comes a new github repo: [radio-pi/RadioPi](https://github.com/ra
 
 And an new design:
 
-![The new App](/images/2015-04-20-the-app.png)
+![The new App](/public/images/2015-04-20-the-app.png)
 
 
 For the future I have planed to change the back-end to python with WebSockets. Stay tuned!
