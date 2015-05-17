@@ -32,6 +32,17 @@ now you should be able to ssh in with pi@ip and you password
 set static ip
 /etc/network/interfaces
 
+```
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+    address 192.168.17.66
+    netmask 255.255.255.0
+    gateway 192.168.17.1
+```
+
 remove not used packages
 sudo apt-get purge --auto-remove wolfram-engine
 sudo apt-get purge --auto-remove scratch
@@ -74,8 +85,36 @@ sudo chmod -R g+w /var/lib/mpd/
 sudo chmod -R g+w /var/run/mpd/
 
 /etc/mpd.conf
-group                          "audio"
+```
+music_directory		        "/var/lib/mpd/music"
+playlist_directory		"/var/lib/mpd/playlists"
+db_file			        "/var/lib/mpd/tag_cache"
+log_file			"/var/log/mpd/mpd.log"
+pid_file			"/var/run/mpd/pid"
+state_file			"/var/lib/mpd/state"
+sticker_file                    "/var/lib/mpd/sticker.sql"
 
+user				"mpd"
+group                           "audio"
+bind_to_address		        "127.0.0.1"
+
+input {
+        plugin "curl"
+}
+
+audio_output {
+	type		"alsa"
+	name		"My ALSA Device"
+	device		"hw:0,0"	# optional
+	format		"44100:16:2"	# optional
+	#mixer_device	"hw:0"	        # optional
+	mixer_control	"Digital"       # optional
+	mixer_index	"0"		# optional
+}
+
+filesystem_charset		"UTF-8"
+id3v1_encoding			"UTF-8"
+```
 
 sudo service mpd start
 
