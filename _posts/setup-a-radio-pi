@@ -1,4 +1,10 @@
-setup a radiopi 
+# setup a radiopi 
+
+First of all I build it with a [Raspberry Pi B+]( https://www.raspberrypi.org/products/model-b-plus/ ) and the 
+[HiFiBerry DAC+]( https://www.hifiberry.com/dacplus/ ) but if you use other hardware like a USB sound card 
+you can easily adapt most of this tutorial. Goal of this article is that you have a running Radio Pi at the end. 
+
+## Raspberry up and running
 
 1. download the latest 2015-05-05-raspbian-wheezy.zip image 
 
@@ -8,8 +14,6 @@ copy it to a sd card
 sudo dd if=2015-05-05-raspbian-wheezy.img of=/dev/sdc
 
 double check that sdc ist your sdcard with something like blkid -o list
-
-
 
 #rpi start menu (raspi-config)
 Expand filesystem
@@ -22,12 +26,6 @@ Advanced Options
 
 
 Finish and reboot
-
-
-now you should be able to ssh in with pi@ip and you password
-
-
-# setup 
 
 set static ip
 /etc/network/interfaces
@@ -42,6 +40,13 @@ iface eth0 inet static
     netmask 255.255.255.0
     gateway 192.168.17.1
 ```
+
+now you should be able to ssh in with pi@ip and you password
+
+
+## The setup 
+
+Less packages are less things you need to keep up to date, less stuff that can break. 
 
 remove not used packages
 sudo apt-get purge --auto-remove wolfram-engine
