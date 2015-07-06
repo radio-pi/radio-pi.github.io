@@ -44,3 +44,26 @@ id3v1_encoding			"UTF-8"
 sudo service mpd start
 
 sudo update-rc.d mpd enable
+
+# App Backend
+
+Install the web backend for the android app.
+Install the required tools: python and python-virtualenv with apt-get.
+
+clone source 
+
+$ sudo git clone https://github.com/radio-pi/python-websocket-backend.git /usr/local/src/radiopi
+
+sudo chown -R pi radiopi/
+
+create the enviroment with 
+virtualenv /usr/local/src/radiopi/env
+
+install all python dependencies 
+sudo apt-get install python-dev
+pip install -r requirements.txt 
+
+copy the init script to /etc/init.d/
+
+$ sudo cp /usr/local/src/radiopi/radiopi /etc/init.d/
+
