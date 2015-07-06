@@ -6,9 +6,6 @@ sudo apt-get install mpd lame mpc
 
 sudo service mpd stop
 
-sudo chmod -R g+w /var/lib/mpd/
-sudo chmod -R g+w /var/run/mpd/
-
 /etc/mpd.conf
 ```
 music_directory		        "/var/lib/mpd/music"
@@ -66,4 +63,8 @@ pip install -r requirements.txt
 copy the init script to /etc/init.d/
 
 $ sudo cp /usr/local/src/radiopi/radiopi /etc/init.d/
+
+sudo service radiopi start
+sudo update-rc.d radiopi defaults
+sudo update-rc.d radiopi enable
 
