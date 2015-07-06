@@ -1,0 +1,14 @@
+play_on_start.sh
+```
+#!/bin/sh
+
+mpc clear
+mpc add http://stream.srg-ssr.ch/m/drs1/mp3_128
+mpc play
+mpc volume 85
+```
+
+chmod +x play_on_start.sh
+
+crontab -e
+@reboot /home/pi/play_on_start.sh
