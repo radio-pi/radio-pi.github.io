@@ -1,0 +1,46 @@
+This post is asuming that you have setup your Raspberry Pi
+and your audio interface. If not check out the blog post: http://radio-pi.github.io/2015/07/06/setup-a-radio-pi/
+
+# install mpd
+sudo apt-get install mpd lame mpc
+
+sudo service mpd stop
+
+sudo chmod -R g+w /var/lib/mpd/
+sudo chmod -R g+w /var/run/mpd/
+
+/etc/mpd.conf
+```
+music_directory		        "/var/lib/mpd/music"
+playlist_directory		"/var/lib/mpd/playlists"
+db_file			        "/var/lib/mpd/tag_cache"
+log_file			"/var/log/mpd/mpd.log"
+pid_file			"/var/run/mpd/pid"
+state_file			"/var/lib/mpd/state"
+sticker_file                    "/var/lib/mpd/sticker.sql"
+
+user				"mpd"
+group                           "audio"
+bind_to_address		        "127.0.0.1"
+
+input {
+        plugin "curl"
+}
+
+audio_output {
+	type		"alsa"
+	name		"My ALSA Device"
+	device		"hw:0,0"	# optional
+	format		"44100:16:2"	# optional
+	#mixer_device	"hw:0"	        # optional
+	mixer_control	"Digital"       # optional
+	mixer_index	"0"		# optional
+}
+
+filesystem_charset		"UTF-8"
+id3v1_encoding			"UTF-8"
+```
+
+sudo service mpd start
+
+sudo update-rc.d mpd enable
