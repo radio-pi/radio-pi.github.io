@@ -1,4 +1,7 @@
-# setup a radiopi 
+---
+layout: post
+title: Setup a RadioPi
+---
 
 First of all I build it with a [Raspberry Pi B+]( https://www.raspberrypi.org/products/model-b-plus/ ) and the 
 [HiFiBerry DAC+]( https://www.hifiberry.com/dacplus/ ) but if you use other hardware like a USB sound card 
