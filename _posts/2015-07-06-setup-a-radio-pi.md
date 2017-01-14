@@ -3,7 +3,7 @@ layout: post
 title: Setup a RadioPi
 ---
 
-THIS IS OUTDATET CHECKOUT THE UPDATED GUIDE [HERE]( /2016-01-12-setup-a-radio-pi.html )
+THIS IS OUTDATET CHECKOUT THE UPDATED GUIDE [HERE]( http://radio-pi.github.io/2016/01/12/setup-a-radio-pi/ )
 
 
 First of all I build it with a [Raspberry Pi B+]( https://www.raspberrypi.org/products/model-b-plus/ ) and the 
