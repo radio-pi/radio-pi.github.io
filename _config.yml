@@ -23,7 +23,7 @@ description: Radio Pi - Transforme your Rapberry Pi in a Radio!
 
 # List of links in the navigation bar
 navbar-links:
-  #About Me: "aboutme"
+  Download: "download"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
