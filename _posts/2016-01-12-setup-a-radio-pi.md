@@ -64,6 +64,7 @@ there hardware running, here just a TL:DR and the link to [there documentation](
 Replace in `/boot/config.txt` the `dtparam=audio=on` with the one matching your hifiberry which is in my case: `dtoverlay=hifiberry-dacplus`.
 
 Create /etc/asound.conf with 
+
 ```
 pcm.!default  {
  type hw card 0

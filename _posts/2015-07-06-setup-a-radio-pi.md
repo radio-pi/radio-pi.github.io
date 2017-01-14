@@ -3,7 +3,7 @@ layout: post
 title: Setup a RadioPi
 ---
 
-THIS IS OUTDATET CHECKOUT THE UPDATED GUIDE [HERE]( http://radio-pi.github.io/2016/01/12/setup-a-radio-pi/ )
+THIS IS OUTDATET CHECKOUT THE UPDATED GUIDE [HERE]( /2016-01-12-setup-a-radio-pi )
 
 
 First of all I build it with a [Raspberry Pi B+]( https://www.raspberrypi.org/products/model-b-plus/ ) and the 
@@ -83,6 +83,7 @@ there hardware running, here just a TL:DR and the link to [there documentation](
 Remove the line `snd_bcm2835` from /etc/modules. And add `dtoverlay=hifiberry-dacplus` to /boot/config.txt.
 
 Create /etc/asound.conf with 
+
 ```
 pcm.!default  {
  type hw card 0

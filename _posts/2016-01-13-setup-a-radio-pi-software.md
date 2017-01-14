@@ -18,6 +18,7 @@ sudo service mpd stop
 ```
 
 The only thing I changed in the mpd config (`/etc/mpd.conf`) is the mixer_control to Digital.
+
 ```
 audio_output {
 	type		"alsa"
