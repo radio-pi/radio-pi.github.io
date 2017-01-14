@@ -4,7 +4,7 @@ title: Get the software running
 ---
 
 This post is asuming that you have setup your Raspberry Pi
-and your audio interface. If not check out the blog post: [here]( http://radio-pi.github.io/2016/01/12/setup-a-radio-pi/ ) 
+and your audio interface. If not check out the blog post: [here]( /2016-01-12-setup-a-radio-pi ) 
 
 # Install mpd
 
