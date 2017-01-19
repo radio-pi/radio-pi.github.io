@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://radio-pi.github.io"
+url: "https://radio-pi.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -24,6 +24,8 @@ description: Radio Pi - Transforme your Rapberry Pi in a Radio!
 # List of links in the navigation bar
 navbar-links:
   Download: "download"
+  Blog: ''
+  Tutorials: "tutorials"
   #Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
@@ -123,7 +125,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
