@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What's Radio Pi?
+category: blog
 ---
 
 My project for this December was to build a radio with a Raspberry Pi. One of my key goals is to make it so simple 
