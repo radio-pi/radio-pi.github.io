@@ -89,9 +89,6 @@ share-links-active:
 url-pretty: "radio-pi.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
-
 # piwik tracking
 piwik_analytics: true
 
