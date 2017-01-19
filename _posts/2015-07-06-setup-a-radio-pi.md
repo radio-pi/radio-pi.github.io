@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setup a RadioPi
+category: tutorial
 ---
 
 THIS IS OUTDATET CHECKOUT THE UPDATED GUIDE [HERE]( /2016-01-12-setup-a-radio-pi )

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Get the software running
+category: tutorial
 ---
 
 This post is asuming that you have setup your Raspberry Pi

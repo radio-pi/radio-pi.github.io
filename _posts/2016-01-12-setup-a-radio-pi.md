@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setup a RadioPi
+category: tutorial
 ---
 
 First of all I build it with a [Raspberry Pi 3]( https://www.raspberrypi.org/products/raspberry-pi-3-model-b/ ) and the 

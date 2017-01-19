@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A new Android App.
+category: blog
 ---
 
 I upgraded the App to the latest android studio, gradle and everything. (There where a few functions which I added since December)
