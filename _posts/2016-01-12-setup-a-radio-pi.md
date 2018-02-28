@@ -10,13 +10,13 @@ you can easily adapt most of this tutorial. Goal of this article is that you hav
 
 ## Raspberry up and running
 
-The first step is to download the latest 2016-11-25-raspbian-jessie-lite.zip image. After you unzip it you can copy the 
+The first step is to download the latest 2017-11-29-raspbian-jessie-lite.zip image. After you unzip it you can copy the 
 the image to your sd card.
 
 Please make sure /dev/sdX is the right device!
 
 ```
-sudo dd if=2016-11-25-raspbian-jessie-lite.img of=/dev/sdc
+sudo dd if=2017-11-29-raspbian-jessie-lite.img of=/dev/sdc
 ```
 
 Now you can connect a monitor and a keyboard and start your Raspberry Pi. This shouldn't 
@@ -35,7 +35,7 @@ sudo service ssh start
 ### Static IP
 
 With the IP and ssh started we are able to login to our Raspberry Pi with `ssh pi@192.168.1.XXX`.
-Before everthing elese change the password with `passwd`. Cool now we can configure a static IP.
+Before everything else change the password with `passwd`. Cool now we can configure a static IP.
 You don't need one but it makes life simpler. (Also I always install vim)
 
 
