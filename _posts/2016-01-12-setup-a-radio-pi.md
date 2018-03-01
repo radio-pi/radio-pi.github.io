@@ -29,7 +29,7 @@ Now you should see a line like
 To login we use pi as the user and raspberry is the password. And we start ssh to do the rest remote.
 
 ```
-sudo service ssh start
+sudo systemctl start ssh
 ```
 
 ### Static IP
