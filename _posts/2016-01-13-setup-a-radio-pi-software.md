@@ -67,10 +67,11 @@ source /usr/local/src/radiopi/env/bin/activate
 pip install -r /usr/local/src/radiopi/requirements.txt 
 ```
 
-Copy the init script to /etc/init.d/ and and run it on startup.
+Copy the init script to /lib/systemd/system/ reload it and and run it on startup.
 
 ```
 sudo cp /usr/local/src/radiopi/radiopi.service /lib/systemd/system/
+sudo systemctl daemon-reload
 sudo systemctl enable radiopi
 sudo systemctl start radiopi
 ```
