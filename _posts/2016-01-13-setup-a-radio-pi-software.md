@@ -48,7 +48,7 @@ And here is how:
 Install the required tools: python, virtualenv and git with apt-get.
 
 ```
-sudo apt install python3 virtualenv git
+sudo apt install python3 python3-dev virtualenv git
 ```
 
 Get the source:
