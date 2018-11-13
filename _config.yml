@@ -91,9 +91,6 @@ share-links-active:
 url-pretty: "radio-pi.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Misc --- #
-# piwik tracking
-piwik_analytics: true
-
 # Facebook App ID
 # fb_app_id: ""
 
