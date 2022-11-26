@@ -4,6 +4,8 @@ title: Get the software running
 category: tutorial
 ---
 
+THIS IS OUTDATET CHECKOUT THE UPDATED GUIDE [HERE]( /2022-11-26-setup-a-radio-pi-software )
+
 This post is asuming that you have setup your Raspberry Pi
 and your audio interface. If not check out the blog post: [here]( /2016-01-12-setup-a-radio-pi ) 
 
