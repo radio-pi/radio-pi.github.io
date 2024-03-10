@@ -4,8 +4,6 @@ title: Setup a RadioPi
 category: tutorial
 ---
 
-THIS IS OUTDATET CHECKOUT THE UPDATED GUIDE [HERE]( /2024-03-10-setup-a-radio-pi )
-
 The hardware I used for this tutorial is the [Raspberry Pi 4 B]( https://www.raspberrypi.com/products/raspberry-pi-4-model-b/ )
 and the [HiFiBerry DAC+]( https://www.hifiberry.com/dacplus/ ).
 If you use other hardware like a USB sound card you might need to adapt parts of this tutorial.
@@ -13,14 +11,14 @@ Goal of this tutorial is that you have a running Radio Pi at the end.
 
 ## Raspberry up and running
 
-The first step is to download the latest [Raspberry Pi OS Lite image](https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2022-09-26/2022-09-22-raspios-bullseye-arm64-lite.img.xz).
+The first step is to download the latest [Raspberry Pi OS Lite image](https://downloads.raspberrypi.com/raspios_lite_arm64/images/raspios_lite_arm64-2023-12-11/2023-12-11-raspios-bookworm-arm64-lite.img.xz).
 After that unpack the image and copy it to the SD card.
 
 Please make sure /dev/sdX is the correct device!
 
 ```
-unxz 2022-09-22-raspios-bullseye-arm64-lite.img.xz
-sudo dd if=2022-09-22-raspios-bullseye-arm64-lite.img of=/dev/sdX
+unxz 2023-12-11-raspios-bookworm-arm64-lite.img.xz
+sudo dd if=2023-12-11-raspios-bookworm-arm64-lite.img of=/dev/sdX
 ```
 
 Connect a monitor, a keyboard and network and start your Raspberry Pi.
@@ -62,7 +60,7 @@ ip a
 HiFiBerry has done a pretty good job in documenting what you should do to get there hardware running.
 Here just a TL:DR and the link to [there documentation]( https://www.hifiberry.com/docs/software/configuring-linux-3-18-x/ ).
 
-Replace in `/boot/config.txt` the `dtparam=audio=on` with the one matching your HiFiBerry.
+Replace in `/boot/firmware/config.txt` the `dtparam=audio=on` with the one matching your HiFiBerry.
 And disable `force_eeprom_read` see [Configuration changes in Linux 5.4](https://www.hifiberry.com/blog/configuration-changes-in-linux-5-4/).
 In my case:
 
@@ -71,14 +69,14 @@ dtoverlay=hifiberry-dacplus
 force_eeprom_read=0
 ```
 
-Create /etc/asound.conf with 
+Create /etc/asound.conf with
 
 ```
 pcm.!default  {
- type hw card 2
+ type hw card 0
 }
 ctl.!default {
- type hw card 2
+ type hw card 0
 }
 ```
 
